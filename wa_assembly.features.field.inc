@@ -182,7 +182,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '7',
+          'weight' => '12',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -207,9 +207,9 @@ function wa_assembly_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
-        'title' => 'optional',
+        'title' => 'value',
         'title_maxlength' => '128',
-        'title_value' => '',
+        'title_value' => '<img src="/profiles/weassemble/modules/features/wa_assembly/icons/icon-facebook.png" />',
         'url' => 0,
         'user_register_form' => FALSE,
         'validate_url' => 1,
@@ -219,7 +219,7 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '96',
+        'weight' => '10',
       ),
     ),
   );
@@ -264,7 +264,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '10',
+          'weight' => '15',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -280,7 +280,7 @@ function wa_assembly_field_default_fields() {
       'settings' => array(
         'attributes' => array(
           'class' => '',
-          'configurable_title' => 0,
+          'configurable_title' => 1,
           'rel' => '',
           'target' => '_blank',
           'title' => '',
@@ -289,9 +289,9 @@ function wa_assembly_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
-        'title' => 'optional',
+        'title' => 'value',
         'title_maxlength' => '128',
-        'title_value' => '',
+        'title_value' => '<img src="/profiles/weassemble/modules/features/wa_assembly/icons/icon-flickr.png" />',
         'url' => 0,
         'user_register_form' => FALSE,
         'validate_url' => 1,
@@ -301,7 +301,7 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '99',
+        'weight' => '13',
       ),
     ),
   );
@@ -346,7 +346,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '9',
+          'weight' => '14',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -383,7 +383,7 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '98',
+        'weight' => '12',
       ),
     ),
   );
@@ -465,7 +465,7 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '101',
+        'weight' => '16',
       ),
     ),
   );
@@ -547,7 +547,7 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '100',
+        'weight' => '15',
       ),
     ),
   );
@@ -772,74 +772,6 @@ function wa_assembly_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assembly-field_assembly_twitter_account'
-  $fields['node-assembly-field_assembly_twitter_account'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_assembly_twitter_account',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'module' => 'text',
-      'settings' => array(
-        'max_length' => '64',
-      ),
-      'translatable' => '0',
-      'type' => 'text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'assembly',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '6',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_assembly_twitter_account',
-      'label' => 'Twitter Account',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'size' => '60',
-        ),
-        'type' => 'text_textfield',
-        'weight' => '8',
-      ),
-    ),
-  );
-
   // Exported field: 'node-assembly-field_assembly_twitter_hashtag'
   $fields['node-assembly-field_assembly_twitter_hashtag'] = array(
     'field_config' => array(
@@ -903,6 +835,88 @@ function wa_assembly_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
+        'weight' => '14',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-assembly-field_assembly_twitter_links'
+  $fields['node-assembly-field_assembly_twitter_links'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_assembly_twitter_links',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'assembly',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '11',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_assembly_twitter_links',
+      'label' => 'Twitter Links',
+      'required' => 0,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 1,
+          'rel' => '',
+          'target' => 'default',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '80',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'value',
+        'title_maxlength' => '128',
+        'title_value' => '<img src="/profiles/weassemble/modules/features/wa_assembly/icons/icon-twitter.png" />',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_field',
         'weight' => '9',
       ),
     ),
@@ -1077,7 +1091,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '8',
+          'weight' => '13',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1093,7 +1107,7 @@ function wa_assembly_field_default_fields() {
       'settings' => array(
         'attributes' => array(
           'class' => '',
-          'configurable_title' => 0,
+          'configurable_title' => 1,
           'rel' => '',
           'target' => '_blank',
           'title' => '',
@@ -1102,9 +1116,9 @@ function wa_assembly_field_default_fields() {
           'url_cutoff' => '80',
         ),
         'enable_tokens' => 1,
-        'title' => 'optional',
+        'title' => 'value',
         'title_maxlength' => '128',
-        'title_value' => '',
+        'title_value' => '<img src="/profiles/weassemble/modules/features/wa_assembly/icons/icon-youtube.png" />',
         'url' => 0,
         'user_register_form' => FALSE,
         'validate_url' => 1,
@@ -1114,7 +1128,7 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '97',
+        'weight' => '11',
       ),
     ),
   );
@@ -1135,8 +1149,8 @@ function wa_assembly_field_default_fields() {
   t('Please choose the option that gits best.');
   t('Province');
   t('This is the first message users will see when coming to your Assembly page.');
-  t('Twitter Account');
   t('Twitter Hashtag');
+  t('Twitter Links');
   t('Welcome Message');
   t('YouTube Channel');
 

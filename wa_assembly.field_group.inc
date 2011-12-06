@@ -23,11 +23,11 @@ function wa_assembly_field_group_info() {
     'label' => 'Social Media Links',
     'weight' => '1',
     'children' => array(
-      0 => 'field_assembly_twitter_account',
-      1 => 'field_assembly_facebook',
-      2 => 'field_assembly_youtube',
-      3 => 'field_assembly_google',
-      4 => 'field_assembly_flickr',
+      0 => 'field_assembly_facebook',
+      1 => 'field_assembly_youtube',
+      2 => 'field_assembly_google',
+      3 => 'field_assembly_flickr',
+      4 => 'field_assembly_twitter_links',
     ),
     'format_type' => 'div',
     'format_settings' => array(
