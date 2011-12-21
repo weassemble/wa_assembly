@@ -47,7 +47,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '6',
+          'weight' => '4',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -71,7 +71,7 @@ function wa_assembly_field_default_fields() {
           'rows' => '3',
         ),
         'type' => 'text_textarea',
-        'weight' => '4',
+        'weight' => '6',
       ),
     ),
   );
@@ -113,7 +113,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '7',
+          'weight' => '5',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -137,7 +137,7 @@ function wa_assembly_field_default_fields() {
           'rows' => '3',
         ),
         'type' => 'text_textarea',
-        'weight' => '6',
+        'weight' => '7',
       ),
     ),
   );
@@ -264,7 +264,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '15',
+          'weight' => '16',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -346,7 +346,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '14',
+          'weight' => '15',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -383,7 +383,89 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '12',
+        'weight' => '15',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-assembly-field_assembly_link_primary'
+  $fields['node-assembly-field_assembly_link_primary'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_assembly_link_primary',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'link',
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'rel' => '',
+          'target' => 'default',
+        ),
+        'display' => array(
+          'url_cutoff' => 80,
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => 128,
+        'title_value' => '',
+        'url' => 0,
+      ),
+      'translatable' => '0',
+      'type' => 'link_field',
+    ),
+    'field_instance' => array(
+      'bundle' => 'assembly',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'hidden',
+          'module' => 'link',
+          'settings' => array(),
+          'type' => 'link_default',
+          'weight' => '0',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_assembly_link_primary',
+      'label' => 'Primary Website',
+      'required' => 0,
+      'settings' => array(
+        'attributes' => array(
+          'class' => '',
+          'configurable_title' => 0,
+          'rel' => '',
+          'target' => '_blank',
+          'title' => '',
+        ),
+        'display' => array(
+          'url_cutoff' => '60',
+        ),
+        'enable_tokens' => 1,
+        'title' => 'optional',
+        'title_maxlength' => '60',
+        'title_value' => '',
+        'url' => 0,
+        'user_register_form' => FALSE,
+        'validate_url' => 1,
+      ),
+      'widget' => array(
+        'active' => 0,
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_field',
+        'weight' => '3',
       ),
     ),
   );
@@ -428,7 +510,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '10',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -465,7 +547,7 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '16',
+        'weight' => '9',
       ),
     ),
   );
@@ -510,7 +592,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '5',
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -547,7 +629,7 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '15',
+        'weight' => '5',
       ),
     ),
   );
@@ -588,11 +670,11 @@ function wa_assembly_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'above',
+          'label' => 'hidden',
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '8',
+          'weight' => '13',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -629,7 +711,7 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '7',
+        'weight' => '11',
       ),
     ),
   );
@@ -669,11 +751,11 @@ function wa_assembly_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'inline',
+          'label' => 'hidden',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '3',
+          'weight' => '1',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -702,38 +784,20 @@ function wa_assembly_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assembly-field_assembly_province'
-  $fields['node-assembly-field_assembly_province'] = array(
+  // Exported field: 'node-assembly-field_assembly_location_map'
+  $fields['node-assembly-field_assembly_location_map'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_assembly_province',
-      'foreign keys' => array(
-        'tid' => array(
-          'columns' => array(
-            'tid' => 'tid',
-          ),
-          'table' => 'taxonomy_term_data',
-        ),
-      ),
-      'indexes' => array(
-        'tid' => array(
-          0 => 'tid',
-        ),
-      ),
-      'module' => 'taxonomy',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => array(
-            'vocabulary' => 'province',
-            'parent' => '0',
-          ),
-        ),
-      ),
+      'field_name' => 'field_assembly_location_map',
+      'foreign keys' => array(),
+      'indexes' => array(),
+      'module' => 'geofield',
+      'settings' => array(),
       'translatable' => '0',
-      'type' => 'taxonomy_term_reference',
+      'type' => 'geofield',
     ),
     'field_instance' => array(
       'bundle' => 'assembly',
@@ -742,11 +806,13 @@ function wa_assembly_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'inline',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '4',
+          'label' => 'above',
+          'module' => 'geofield',
+          'settings' => array(
+            'data' => '',
+          ),
+          'type' => 'geofield_wkt',
+          'weight' => 17,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -756,18 +822,25 @@ function wa_assembly_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_assembly_province',
-      'label' => 'Province',
+      'field_name' => 'field_assembly_location_map',
+      'label' => 'Map Location',
       'required' => 0,
       'settings' => array(
+        'local_solr' => array(
+          'enabled' => FALSE,
+          'lat_field' => 'lat',
+          'lng_field' => 'lng',
+        ),
         'user_register_form' => FALSE,
       ),
       'widget' => array(
         'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => '3',
+        'module' => 'geofield',
+        'settings' => array(
+          'openlayers_map' => 'geofield_widget_map',
+        ),
+        'type' => 'geofield_openlayers',
+        'weight' => '96',
       ),
     ),
   );
@@ -811,7 +884,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '9',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -835,7 +908,7 @@ function wa_assembly_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '14',
+        'weight' => '4',
       ),
     ),
   );
@@ -956,10 +1029,9 @@ function wa_assembly_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
-          'module' => 'list',
           'settings' => array(),
-          'type' => 'list_default',
-          'weight' => '0',
+          'type' => 'hidden',
+          'weight' => '13',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -981,72 +1053,6 @@ function wa_assembly_field_default_fields() {
         'settings' => array(),
         'type' => 'options_buttons',
         'weight' => '1',
-      ),
-    ),
-  );
-
-  // Exported field: 'node-assembly-field_assembly_welcome'
-  $fields['node-assembly-field_assembly_welcome'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_assembly_welcome',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'module' => 'text',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'text_long',
-    ),
-    'field_instance' => array(
-      'bundle' => 'assembly',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => 'This is the first message users will see when coming to your Assembly page.',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'text',
-          'settings' => array(),
-          'type' => 'text_default',
-          'weight' => '2',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_assembly_welcome',
-      'label' => 'Welcome Message',
-      'required' => 0,
-      'settings' => array(
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '3',
-        ),
-        'type' => 'text_textarea',
-        'weight' => '5',
       ),
     ),
   );
@@ -1091,7 +1097,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '13',
+          'weight' => '14',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1128,7 +1134,7 @@ function wa_assembly_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '11',
+        'weight' => '12',
       ),
     ),
   );
@@ -1146,12 +1152,11 @@ function wa_assembly_field_default_fields() {
   t('Internal Links');
   t('Livestream');
   t('Location');
+  t('Map Location');
   t('Please choose the option that gits best.');
-  t('Province');
-  t('This is the first message users will see when coming to your Assembly page.');
+  t('Primary Website');
   t('Twitter Hashtag');
   t('Twitter Links');
-  t('Welcome Message');
   t('YouTube Channel');
 
   return $fields;
