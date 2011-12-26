@@ -10,14 +10,14 @@
 function wa_assembly_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'node-assembly-field_assembly_about'
-  $fields['node-assembly-field_assembly_about'] = array(
+  // Exported field: 'node-assembly-field_assembly_contact_info'
+  $fields['node-assembly-field_assembly_contact_info'] = array(
     'field_config' => array(
       'active' => '1',
       'cardinality' => '1',
       'deleted' => '0',
       'entity_types' => array(),
-      'field_name' => 'field_assembly_about',
+      'field_name' => 'field_assembly_contact_info',
       'foreign keys' => array(
         'format' => array(
           'columns' => array(
@@ -43,11 +43,11 @@ function wa_assembly_field_default_fields() {
       'description' => '',
       'display' => array(
         'default' => array(
-          'label' => 'hidden',
+          'label' => 'above',
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '4',
+          'weight' => 18,
         ),
         'teaser' => array(
           'label' => 'above',
@@ -57,8 +57,8 @@ function wa_assembly_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'field_name' => 'field_assembly_about',
-      'label' => 'About',
+      'field_name' => 'field_assembly_contact_info',
+      'label' => 'Contact Info',
       'required' => 0,
       'settings' => array(
         'text_processing' => '0',
@@ -71,7 +71,7 @@ function wa_assembly_field_default_fields() {
           'rows' => '3',
         ),
         'type' => 'text_textarea',
-        'weight' => '6',
+        'weight' => '97',
       ),
     ),
   );
@@ -138,6 +138,140 @@ function wa_assembly_field_default_fields() {
         ),
         'type' => 'text_textarea',
         'weight' => '7',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-assembly-field_assembly_descr_long'
+  $fields['node-assembly-field_assembly_descr_long'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_assembly_descr_long',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'module' => 'text',
+      'settings' => array(),
+      'translatable' => '0',
+      'type' => 'text_long',
+    ),
+    'field_instance' => array(
+      'bundle' => 'assembly',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 20,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_assembly_descr_long',
+      'label' => 'Long Description',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'rows' => '3',
+        ),
+        'type' => 'text_textarea',
+        'weight' => '99',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-assembly-field_assembly_descr_short'
+  $fields['node-assembly-field_assembly_descr_short'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_assembly_descr_short',
+      'foreign keys' => array(
+        'format' => array(
+          'columns' => array(
+            'format' => 'format',
+          ),
+          'table' => 'filter_format',
+        ),
+      ),
+      'indexes' => array(
+        'format' => array(
+          0 => 'format',
+        ),
+      ),
+      'module' => 'text',
+      'settings' => array(
+        'max_length' => '255',
+      ),
+      'translatable' => '0',
+      'type' => 'text',
+    ),
+    'field_instance' => array(
+      'bundle' => 'assembly',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => 19,
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'node',
+      'field_name' => 'field_assembly_descr_short',
+      'label' => 'Short Description',
+      'required' => 0,
+      'settings' => array(
+        'text_processing' => '0',
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'text',
+        'settings' => array(
+          'size' => '60',
+        ),
+        'type' => 'text_textfield',
+        'weight' => '98',
       ),
     ),
   );
@@ -552,88 +686,6 @@ function wa_assembly_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assembly-field_assembly_links_internal'
-  $fields['node-assembly-field_assembly_links_internal'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '-1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_assembly_links_internal',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'module' => 'link',
-      'settings' => array(
-        'attributes' => array(
-          'class' => '',
-          'rel' => '',
-          'target' => 'default',
-        ),
-        'display' => array(
-          'url_cutoff' => 80,
-        ),
-        'enable_tokens' => 1,
-        'title' => 'optional',
-        'title_maxlength' => 128,
-        'title_value' => '',
-        'url' => 0,
-      ),
-      'translatable' => '0',
-      'type' => 'link_field',
-    ),
-    'field_instance' => array(
-      'bundle' => 'assembly',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'module' => 'link',
-          'settings' => array(),
-          'type' => 'link_default',
-          'weight' => '3',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_assembly_links_internal',
-      'label' => 'Internal Links',
-      'required' => 0,
-      'settings' => array(
-        'attributes' => array(
-          'class' => '',
-          'configurable_title' => 1,
-          'rel' => '',
-          'target' => '_blank',
-          'title' => '',
-        ),
-        'display' => array(
-          'url_cutoff' => '80',
-        ),
-        'enable_tokens' => 1,
-        'title' => 'optional',
-        'title_maxlength' => '64',
-        'title_value' => '',
-        'url' => 0,
-        'user_register_form' => FALSE,
-        'validate_url' => 1,
-      ),
-      'widget' => array(
-        'active' => 0,
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_field',
-        'weight' => '5',
-      ),
-    ),
-  );
-
   // Exported field: 'node-assembly-field_assembly_livestream'
   $fields['node-assembly-field_assembly_livestream'] = array(
     'field_config' => array(
@@ -995,68 +1047,6 @@ function wa_assembly_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assembly-field_assembly_type'
-  $fields['node-assembly-field_assembly_type'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_assembly_type',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          'occupation' => 'A <strong>Localized Occupation</strong> with a regularly-scheduled physical GA',
-          'nomadic' => 'A <strong>Nomadic Assembly</strong> that physically meets as required',
-          'virtual' => 'A <strong>Virtual Assembly</strong> occurring primarily online',
-        ),
-        'allowed_values_function' => '',
-      ),
-      'translatable' => '0',
-      'type' => 'list_text',
-    ),
-    'field_instance' => array(
-      'bundle' => 'assembly',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => 'Please choose the option that gits best.',
-      'display' => array(
-        'default' => array(
-          'label' => 'hidden',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '13',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_assembly_type',
-      'label' => 'Assembly Type',
-      'required' => 1,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_buttons',
-        'weight' => '1',
-      ),
-    ),
-  );
-
   // Exported field: 'node-assembly-field_assembly_youtube'
   $fields['node-assembly-field_assembly_youtube'] = array(
     'field_config' => array(
@@ -1141,20 +1131,19 @@ function wa_assembly_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('About');
-  t('Assembly Type');
+  t('Contact Info');
   t('Contact Us');
   t('Eg. #OccupyVancouver');
   t('External Links');
   t('Facebook Links');
   t('Flickr Account');
   t('Google+ Account');
-  t('Internal Links');
   t('Livestream');
   t('Location');
+  t('Long Description');
   t('Map Location');
-  t('Please choose the option that gits best.');
   t('Primary Website');
+  t('Short Description');
   t('Twitter Hashtag');
   t('Twitter Links');
   t('YouTube Channel');
