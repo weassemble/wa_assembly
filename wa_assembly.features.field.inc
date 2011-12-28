@@ -44,10 +44,9 @@ function wa_assembly_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 18,
+          'type' => 'hidden',
+          'weight' => '13',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -176,10 +175,9 @@ function wa_assembly_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 20,
+          'type' => 'hidden',
+          'weight' => '15',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -244,10 +242,9 @@ function wa_assembly_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'module' => 'text',
           'settings' => array(),
-          'type' => 'text_default',
-          'weight' => 19,
+          'type' => 'hidden',
+          'weight' => '14',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -644,7 +641,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => '8',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -726,7 +723,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'link',
           'settings' => array(),
           'type' => 'link_default',
-          'weight' => 21,
+          'weight' => '3',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -918,67 +915,6 @@ function wa_assembly_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-assembly-field_assembly_location_map'
-  $fields['node-assembly-field_assembly_location_map'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_assembly_location_map',
-      'foreign keys' => array(),
-      'indexes' => array(),
-      'module' => 'geofield',
-      'settings' => array(),
-      'translatable' => '0',
-      'type' => 'geofield',
-    ),
-    'field_instance' => array(
-      'bundle' => 'assembly',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'geofield',
-          'settings' => array(
-            'data' => '',
-          ),
-          'type' => 'geofield_wkt',
-          'weight' => 17,
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_assembly_location_map',
-      'label' => 'Map Location',
-      'required' => 0,
-      'settings' => array(
-        'local_solr' => array(
-          'enabled' => FALSE,
-          'lat_field' => 'lat',
-          'lng_field' => 'lng',
-        ),
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'geofield',
-        'settings' => array(
-          'openlayers_map' => 'geofield_widget_map',
-        ),
-        'type' => 'geofield_openlayers',
-        'weight' => '6',
-      ),
-    ),
-  );
-
   // Exported field: 'node-assembly-field_assembly_twitter_hashtag'
   $fields['node-assembly-field_assembly_twitter_hashtag'] = array(
     'field_config' => array(
@@ -1018,7 +954,7 @@ function wa_assembly_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '7',
+          'weight' => '6',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1224,7 +1160,6 @@ function wa_assembly_field_default_fields() {
   t('Livestream');
   t('Location');
   t('Long Description');
-  t('Map Location');
   t('Primary Website');
   t('Short Description');
   t('Twitter Hashtag');

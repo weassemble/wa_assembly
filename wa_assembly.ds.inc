@@ -33,13 +33,11 @@ function wa_assembly_ds_layout_settings_info() {
         8 => 'field_assembly_google',
         9 => 'field_assembly_flickr',
       ),
-      'middle' => array(
-        0 => 'field_assembly_about',
-      ),
       'right' => array(
-        0 => 'field_assembly_contact_us',
-        1 => 'field_assembly_twitter_hashtag',
-        2 => 'field_assembly_links_external',
+        0 => 'field_assembly_location_map',
+        1 => 'field_assembly_contact_us',
+        2 => 'field_assembly_twitter_hashtag',
+        3 => 'field_assembly_links_external',
       ),
     ),
     'fields' => array(
@@ -47,7 +45,7 @@ function wa_assembly_ds_layout_settings_info() {
       'field_assembly_location' => 'left',
       'group_social_media_links' => 'left',
       'field_assembly_links_internal' => 'left',
-      'field_assembly_about' => 'middle',
+      'field_assembly_location_map' => 'right',
       'field_assembly_contact_us' => 'right',
       'field_assembly_twitter_hashtag' => 'right',
       'field_assembly_links_external' => 'right',
